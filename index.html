@@ -9,5 +9,28 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCJ5kekJyhi7MssS_JJBZk9Zy5u_zaTkkg",
+        authDomain: "search-image-gallery.firebaseapp.com",
+        projectId: "search-image-gallery",
+        storageBucket: "search-image-gallery.firebasestorage.app",
+        messagingSenderId: "962961881145",
+        appId: "1:962961881145:web:c9a0fea892a26f3cd275e8",
+        measurementId: "G-D9EP84CDJJ"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </body>
 </html>

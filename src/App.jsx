@@ -1,5 +1,5 @@
 import React from 'react'
-import ImageGallery from './components/imageGallery'
+import ImageGallery from './components/ImageGallery'
 
 const App = () => {
 
